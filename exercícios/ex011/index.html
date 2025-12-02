@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>voçê pode abrir esse site em outros dispositivos ou simplesmente aumentar ou diminuir o tamanho de seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>vamos usar a tag audio para colocar audio em nosso site</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/Snail's House × Moe Shop - Pastel ( 128kbps ).mp3" type="audio/mpeg">
+        <!--3 tipos mpeg, ogg, wav serão carregados em fila caso um não carregue// 3 tipos de preload auto, metadata, none-->
+        <p>Infelizmente seu navegador não consegue reproduzir midia de áudio <a href="midia/Snail's House × Moe Shop - Pastel ( 128kbps ).mp3"> clique para baixar o arquivo</a></p>
+
+    </audio>
+</body>
+</html>

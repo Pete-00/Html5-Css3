@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(177, 144, 103);
+            margin: auto;
+            
+        }
+
+        header {
+            background-color: white;
+            padding: 5px 10px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.39);
+            
+        }
+
+         header > h1 {
+            text-align: center;
+        }
+
+        main > h1 {
+            font-weight: bold;
+            
+        }
+
+        aside {
+            text-align: end;
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            padding: 5px 10px;
+            margin: 10px auto;
+            box-shadow: 0px 1px  10px rgba(0, 0, 0, 0.39);
+            border-radius: 10px;
+            height: 45em;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            border-radius: 5px;
+            box-shadow: 0px 1px  10px rgba(0, 0, 0, 0.39);
+        }
+
+        nav > a{
+            margin-right: 30px;
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        nav > a:hover {
+
+            color: rgb(73, 141, 132);
+            font-weight: bold;
+            text-decoration: underline;
+
+        }
+
+        #assuntos {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        footer > p {
+            margin: 1px;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jornal Nacional</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Brasil EUA Canada</h2>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Futebol Hoje</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate. Accusantium animi, ut sapiente officiis architecto fuga pariatur corrupti deserunt soluta nihil ullam illo voluptates mollitia nobis minima vitae facilis!</p>
+                <aside>Machado de Assis (1839-1908)</aside>
+            </article>
+            <article>
+                <h1>Cura do Cancêr</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus delectus laudantium laborum fuga dolorum optio, sit, quisquam omnis, odit voluptatibus molestiae cumque obcaecati corrupti unde? Cum veniam obcaecati corporis sed!</p>
+                <aside>Jorge Amado (1912-2001)</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Jorge amaral 1999-2050</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>para criarmos lista ordenadas usamos a tag &lt;ol&gt; para delimitarmos a lista e &lt;li&gt; para identificar cada item da lista. Ex:</p>
+    <ol>
+        <li>Acordar</li>
+        <li>ligar pro joao</li>
+        <li>tomar banho</li>
+        <li>escovar os dentes</li>
+        <li>tomar café</li>
+    </ol>
+    <p>com o parametro type podemos mudar a formatação. Ex:</p>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>tomar banho</li>
+        <li>escovar os dentes</li>
+        <li>tomar café</li>   
+    </ol>
+    <p>e com o paramentro start podemos decidir onde nossa lista começa. Ex:</p>
+    <ol type="I" start="5">
+        <li>Acordar</li>
+        <li>tomar banho</li>
+        <li>escovar os dentes</li>
+        <li>tomar café</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <p>para criarmos listas não ordenada(onde a ordem não importa) podemos usar da tag &lt;ul&gt; para delimitarmos a lista e &lt;li&gt; para definirmos os itens da lista</p>
+    <ul>
+        <li>site</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul>
+    <p>caso queira podemos personalizar o ponto de cada item da lista usando o parametro type disc, circle ou square. Ex:</p> 
+    <ul type="square">
+        <li>site</li>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+    </ul><hr>
+    <h2>Segunda parte da aula, listas mistas / listas de definição</h2>
+
+    <h2>listas mistas</h2>
+    <p>para fazermos uma lista dentro de um item de outra lista basta abrirmos a tag &lt;ol&gt; ou a tag &lt;ul&gt; dentro da lista. Ex:
+    </p>
+    <ol>
+        &lt;ol&gt;<li>segunda</li>
+        <ol type="A">
+            &lt;ol&gt;<li>matemática</li>
+            <li>culturas</li>
+            <li>cdpef</li>&lt;/ol&gt;
+        </ol>
+        <li>terça</li>
+        <ul type="square">
+            &lt;ul&gt;<li>PPIP</li>
+            <li>matemática</li>
+            <li>psicologia</li>&lt;/ul&gt;
+        </ul>
+        <li>quarta</li>
+        <li>quinta</li>&lt;/ol&gt;
+    </ol>
+    <h2>Lista de definição</h2>
+   <p>na lista de definição temos 3 tags. A primeira delas é a própria lista denominada pela tag &lt;dl&gt; (dl definition list), a segunda sendo os termos (ou itens da lista) denominados pela tag &lt;dt&gt;(definition term) e por ultimo as descrições dos termos denominados pela tag &lt;dd&gt; (definition description). Ex:
+   </p>
+    <dl>
+        <dt>Termo</dt>
+        <dd>definição</dd>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>javascript</dd>
+    </dl>
+    
+</body>
+</html>
